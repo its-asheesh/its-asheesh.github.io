@@ -1,0 +1,199 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in width and height */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #000000, #434343); /* Black gradient background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container for the Slides */
+.slide-container {
+    width: 75%; /* Slides will take 75% of the page width */
+    height: 85%; /* Adjusted height to make the slides visually balanced */
+    position: relative;
+    background-color: #000000; /* Black background for the slides */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Slide Styles */
+.slide {
+    display: none;
+    width: 100%; /* Full width of the slide container */
+    height: 100%; /* Full height of the slide container */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light transparent white background for each slide */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+}
+
+/* Title Page Styles */
+.title-container {
+    text-align: center;
+    padding: 40px;
+    background-color: #000000; /* Black background */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+.title-image {
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+.title-container h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff; /* White title */
+}
+
+.title-container h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    color: #c0c0c0; /* Light gray for subtitle */
+}
+
+/* Slide Title & Text */
+h1, h2 {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: slideIn 1s ease-out forwards;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #c0c0c0; /* Light gray */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Content */
+p, ul {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #d1d1d1; /* Light grayish text */
+    animation: fadeIn 1s ease-out forwards;
+    padding: 10px 0;
+}
+
+/* Bullet List Styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    color: #c0c0c0; /* Gray list items */
+}
+
+/* Navigation Buttons */
+.nav-btn {
+    background-color: #000000; /* Black buttons */
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.5rem;
+    border: 1px solid #ffffff; /* White border */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #ffffff;
+    color: black;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+.nav-btn:active {
+    background-color: #c0c0c0;
+    color: black;
+    transform: translateY(2px);
+}
+
+.navigation {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+/* Slide Animations */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Interactive Effects */
+.show-slide {
+    display: block;
+    opacity: 1;
+}
+
+.hide-slide {
+    display: none;
+    opacity: 0;
+}
+
+/* Apply hover effect for each paragraph */
+p:hover, ul li:hover {
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Background Gradient for Slide */
+.slide:nth-child(odd) {
+    background: linear-gradient(135deg, #1c1c1c, #3b3b3b); /* Darker gradient for alternate slides */
+}
+
+.slide:nth-child(even) {
+    background: linear-gradient(135deg, #2b2b2b, #5a5a5a); /* Lighter gradient for even slides */
+}
