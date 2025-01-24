@@ -4,147 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asheesh Rathore - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-top: 0.5rem;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        section {
-            margin-bottom: 2rem;
-        }
-
-        h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin-bottom: 0.5rem;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-        }
-
-        .contact a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .contact a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Asheesh Rathore</h1>
-        <p>Software Developer</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
     <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Enthusiastic software developer fresher with strong skills in Java, Python, and web development. Experienced in front-end and back-end basics, with hands-on project work. Seeking to apply technical skills in a collaborative environment.</p>
-        </section>
+        <!-- Left Column -->
+        <div class="left-column">
+            <div class="profile">
+                <!-- Profile Picture -->
+                <img src="./pic2.jpeg" alt="" class="profile-pic">
+                
+                <!-- Name and Title -->
+                <h1>Asheesh Rathore</h1>
+                <p class="subtitle">Software Developer</p>
+            </div>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming Languages: Java, Python</li>
-                <li>Web Technologies: HTML, CSS, JavaScript</li>
-                <li>Frameworks & Tools: Node.js</li>
-                <li>Databases: SQL, MongoDB</li>
-                <li>Core Concepts: Object-Oriented Programming (OOP), Data Structures</li>
-            </ul>
-        </section>
+            <!-- Social Links -->
+            <div class="links">
+                <ul >
+                    <li><a href="https://www.linkedin.com/in/asheesh-rathore-2696912a9" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="https://github.com/its-asheesh" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><a href="https://novelnestt.netlify.app" target="_blank"><i class="fas fa-globe"></i> My Project</a></li>
+                </ul>
+            </div>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <strong>Novel Nest Online Bookstore Platform:</strong>
-                    Developed an online bookstore platform for buying and selling new and second-hand books. Built the frontend with HTML, CSS, and JavaScript for a responsive user experience. Managed backend operations using Node.js, Express.js, and MongoDB for secure transactions and inventory tracking.
-                </li>
-            </ul>
-        </section>
+            <!-- Contact Information -->
+            <div class="contact">
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:userasheesh007@gmail.com">userasheesh007@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> Phone: <a href="tel:+918077190206">+91-8077190206</a></p>
+            </div>
+        </div>
 
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li>Noida Institute of Engineering and Technology — Master of Computer Applications (M.C.A.) | 2023-Present</li>
-                <li>Karm Kshetra P.G. College — M.Sc. - Mathematics | 2019 - 2021 | 66.70%</li>
-                <li>SRI R N Yadav Mahavidyalaya — B.Sc. - Mathematics | 2016 - 2019 | 59%</li>
-            </ul>
-        </section>
+        <!-- Right Column -->
+        <div class="right-column">
+            <!-- About Section -->
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    I am an enthusiastic software developer with strong skills in Java, Python, and web development.
+                    I have experience working on both front-end and back-end projects. My goal is to apply my technical
+                    expertise to create impactful solutions in a collaborative environment.
+                </p>
+            </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:userasheesh007@gmail.com">userasheesh007@gmail.com</a></p>
-            <p>Phone: <a href="tel:+918077190206">+91-8077190206</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/asheesh-rathore-2696912a9" target="_blank">linkedin.com/in/asheesh-rathore-2696912a9</a></p>
-            <p>GitHub: <a href="https://github.com/its-asheesh" target="_blank">github.com/its-asheesh</a></p>
-        </section>
+            <!-- Skills Section -->
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong>Programming Languages:</strong> Java, Python</li>
+                    <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
+                    <li><strong>Frameworks & Tools:</strong> Node.js, Express.js</li>
+                    <li><strong>Databases:</strong> SQL, MongoDB</li>
+                    <li><strong>Core Concepts:</strong> Object-Oriented Programming (OOP), Data Structures</li>
+                </ul>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li>
+                        <strong>Novel Nest Online Bookstore Platform:</strong> 
+                        <p>
+                            Designed and developed an online bookstore platform that enables users to buy and sell new and 
+                            second-hand books. The frontend is built with HTML, CSS, and JavaScript, ensuring a responsive 
+                            and intuitive user interface. Backend functionality is managed using Node.js, Express.js, and 
+                            MongoDB, featuring secure transactions and inventory tracking.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </div>
-
-    <footer>
-        <p>© 2025 Asheesh Rathore. All rights reserved.</p>
-    </footer>
 </body>
 </html>
