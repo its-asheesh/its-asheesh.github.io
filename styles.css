@@ -1,238 +1,129 @@
-/* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #000000, #434343);
-    color: #333;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: linear-gradient(135deg, #e8f0ff, #f4f4f9);
+    color: #333;
+}
+
+.container {
     display: flex;
-    justify-content: center;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    gap: 2rem;
+}
+
+.left-column {
+    flex: 1;
+    max-width: 300px;
+    background: linear-gradient(135deg, #7a59f0, #555);
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
 }
 
-/* Container for the Slides */
-.slide-container {
-    width: 75%;
-    height: 85%;
-    position: relative;
-    background-color: #000000;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
-    padding: 20px;
+.profile h1 {
+    font-size: 2rem; /* Main name font size */
+    margin-bottom: 5px; /* Reduce space below the name */
 }
 
-/* Slide Styles */
-.slide {
-    display: none;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    opacity: 0;
-    overflow: hidden; /* Ensure content doesn't overflow */
+.profile .subtitle {
+    font-size: 1.2rem; /* Font size for "Software Developer" */
+    color: #fcf9f9; /* Optional: Make it slightly less prominent */
+    margin-top: 0; /* Remove unnecessary top margin */
+    margin-bottom: 100px; /* Optional: Adjust spacing with links */
 }
 
-/* Title Page Styles */
-.title-container {
-    text-align: center;
-    padding: 40px;
-    background-color: #000000;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 0.1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.title-image {
-    width: 250px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
-    margin-bottom: 20px;
+.links {
+    list-style-type: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    text-align: left;
 }
 
-.title-container h1 {
-    font-size: 4rem;
+.links li {
+    margin: 0.5rem 0;
+}
+
+.links li a {
+    display: flex;
+    align-items: center;
+    color: #fdfdfd;
+    text-decoration: none;
     font-weight: bold;
-    margin-bottom: 20px;
-    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem; /* Base font size for all */
 }
 
-.title-container h2 {
-    font-size: 2rem;
-    font-weight: normal;
-    color: #c0c0c0;
+.links a i {
+    margin-right: 8px; /* Adds space between the icon and the text */
 }
 
-/* Slide Title & Text */
-h1, h2 {
-    color: #ffffff;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    animation: slideIn 1s ease-out forwards;
+.links a:hover {
+    text-decoration: underline;
+    color: #4aafff;
 }
 
-h1 {
-    font-size: 4rem;
-    margin-bottom: 10px;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
-    letter-spacing: 2px;
+.contact {
+    margin-top: 1.5rem;
+}
+
+.contact p {
+    margin: 0.5rem 0;
+}
+
+.right-column {
+    flex: 2;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 2rem;
 }
 
 h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #c0c0c0;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #1e90ff;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: #333;
 }
 
-/* Text Content */
-p, ul {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #d1d1d1;
-    animation: fadeIn 1s ease-out forwards;
-    padding: 10px 0;
-    transition: font-size 0.3s ease-in-out, line-height 0.3s ease-in-out;
-    max-width: 90%; /* Limit the maximum width to avoid overflow */
-}
-
-/* Bullet List Styling */
 ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    font-size: 1.1rem;
-    color: #c0c0c0;
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Navigation Buttons */
-.nav-btn {
-    background-color: #000000;
-    color: white;
-    padding: 12px 24px;
-    font-size: 1.5rem;
-    border: 1px solid #ffffff;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+ul li {
+    margin-bottom: 0.5rem;
 }
 
-.nav-btn:hover {
-    background-color: #ffffff;
-    color: black;
-    transform: translateY(-4px);
-    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+a {
+    color: #1e90ff;
+    text-decoration: none;
 }
 
-.nav-btn:active {
-    background-color: #c0c0c0;
-    color: black;
-    transform: translateY(2px);
-}
-
-.navigation {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-}
-
-/* Slide Animations */
-@keyframes slideIn {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Interactive Effects */
-.show-slide {
-    display: block;
-    opacity: 1;
-}
-
-.hide-slide {
-    display: none;
-    opacity: 0;
-}
-
-/* Apply scaling and pop-up effect on hover (font size change instead of scale) */
-p:hover, ul li:hover {
-    font-size: 1.3rem; /* Make the text 30% bigger */
-    line-height: 2.0; /* Adjust line-height for better readability */
-    font-weight: bold; /* Optionally make it bold */
-    cursor: pointer; /* Change cursor to pointer */
-}
-
-/* Apply smooth font-size and line-height transition */
-p, ul li {
-    transition: font-size 0.3s ease-in-out, line-height 0.3s ease-in-out, font-weight 0.3s ease;
-}
-
-/* Background Gradient for Slide */
-.slide:nth-child(odd) {
-    background: linear-gradient(135deg, #1c1c1c, #3b3b3b);
-}
-
-.slide:nth-child(even) {
-    background: linear-gradient(135deg, #2b2b2b, #5a5a5a);
-}
-
-/* Increase the size of the headings inside list items */
-li strong {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-/* Style for the Thank You slide */
-.thank-you-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    padding: 20px;
-}
-
-.thank-you-container h1 {
-    font-size: 3rem;
-    color: #ffffff;
-    margin-bottom: 20px;
-}
-
-.thank-you-container p {
-    font-size: 1.2rem;
-    color: #d1d1d1;
-    line-height: 1.6;
+a:hover {
+    text-decoration: underline;
+    color: #4aafff;
 }
