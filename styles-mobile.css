@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.left-column, .right-column {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-column {
+    flex: 1 1 30%;
+}
+
+.right-column {
+    flex: 1 1 65%;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 100%;
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+/* Links */
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links li {
+    margin: 10px 0;
+}
+
+.links a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+}
+
+.links a i {
+    margin-right: 8px;
+}
+
+/* Contact */
+.contact p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Section Titles */
+section h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Skills and Projects */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left-column, .right-column {
+        flex: 1 1 100%;
+    }
+
+    .profile-pic {
+        max-width: 100px;
+    }
+
+    section h2 {
+        font-size: 1.2rem;
+    }
+
+    .links a {
+        font-size: 0.9rem;
+    }
+
+    .contact p {
+        font-size: 0.8rem;
+    }
+
+    li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+
+    .left-column, .right-column {
+        padding: 15px;
+    }
+
+    .profile-pic {
+        max-width: 80px;
+    }
+
+    section h2 {
+        font-size: 1rem;
+    }
+
+    .links a {
+        font-size: 0.8rem;
+    }
+
+    .contact p {
+        font-size: 0.7rem;
+    }
+
+    li {
+        font-size: 0.8rem;
+    }
+}
