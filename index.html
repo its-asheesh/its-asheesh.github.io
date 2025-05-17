@@ -3,18 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asheesh Rathore - Portfolio</title>
+    <title>Asheesh Rathore - Software Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles-mobile.css" media="(max-width: 768px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">AR</div>
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-item">About</a></li>
+                    <li><a href="#skills" class="nav-item">Skills</a></li>
+                    <li><a href="#experience" class="nav-item">Experience</a></li>
+                    <li><a href="#projects" class="nav-item">Projects</a></li>
+                    <li><a href="#education" class="nav-item">Education</a></li>
+                    <li><a href="#certifications" class="nav-item">Certifications</a></li>
+                    <li><a href="#contact" class="nav-item">Contact</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <div class="container">
         <!-- Left Column -->
-        <div class="left-column">
+        <div class="left-column" data-aos="fade-right">
             <div class="profile">
                 <!-- Profile Picture -->
-                <img src="./pic2.jpeg" alt="" class="profile-pic">
+                <img src="./pic2.jpeg" alt="Asheesh Rathore" class="profile-pic">
                 
                 <!-- Name and Title -->
                 <h1>Asheesh Rathore</h1>
@@ -23,60 +49,354 @@
 
             <!-- Social Links -->
             <div class="links">
-                <ul >
-                    <li><a href="https://www.linkedin.com/in/asheesh-rathore-2696912a9" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/asheesh-rathore/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
                     <li><a href="https://github.com/its-asheesh" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-                    <li><a href="https://novelnestt.netlify.app" target="_blank"><i class="fas fa-globe"></i> My Project</a></li>
+                    <li><a href="https://novelnestt.netlify.app" target="_blank"><i class="fas fa-globe"></i> Portfolio</a></li>
+                    <li><a href="#" id="download-resume"><i class="fas fa-file-alt"></i> Resume</a></li>
                 </ul>
             </div>
 
             <!-- Contact Information -->
-            <div class="contact">
-                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:userasheesh007@gmail.com">userasheesh007@gmail.com</a></p>
-                <p><i class="fas fa-phone"></i> Phone: <a href="tel:+918077190206">+91-8077190206</a></p>
+            <div class="contact-info">
+                <h3>Contact Details</h3>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:asheesh.rathore08@gmail.com">asheesh.rathore08@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+918077190206">+91-8077190206</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Noida, India</p>
+            </div>
+
+            <!-- Skills Tags -->
+            <div class="skill-tags">
+                <h3>Core Skills</h3>
+                <div class="tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">React.js</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">Express.js</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Git</span>
+                </div>
             </div>
         </div>
 
         <!-- Right Column -->
         <div class="right-column">
             <!-- About Section -->
-            <section id="about">
-                <h2>About Me</h2>
-                <p>
-                    I am an enthusiastic software developer with strong skills in Java, Python, and web development.
-                    I have experience working on both front-end and back-end projects. My goal is to apply my technical
-                    expertise to create impactful solutions in a collaborative environment.
-                </p>
+            <section id="about" data-aos="fade-up">
+                <h2><i class="fas fa-user"></i> About Me</h2>
+                <div class="section-content">
+                    <p>
+                        Enthusiastic Software developer fresher with strong skills in Java, Data Structures, and web development. 
+                        Experienced in front-end and back-end basics, with hands-on project work. Seeking to apply technical skills 
+                        in a collaborative environment.
+                    </p>
+                    <p>
+                        I am passionate about creating efficient, user-friendly applications that solve real-world problems. 
+                        With a strong foundation in both front-end and back-end technologies, I enjoy the full development process 
+                        from concept to deployment.
+                    </p>
+                    <p>
+                        My goal is to continuously expand my knowledge and skills while contributing to meaningful projects 
+                        that make a positive impact. I thrive in collaborative environments where I can learn from others 
+                        and share my own insights.
+                    </p>
+                </div>
             </section>
 
             <!-- Skills Section -->
-            <section id="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li><strong>Programming Languages:</strong> Java, Python</li>
-                    <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
-                    <li><strong>Frameworks & Tools:</strong> Node.js, Express.js</li>
-                    <li><strong>Databases:</strong> SQL, MongoDB</li>
-                    <li><strong>Core Concepts:</strong> Object-Oriented Programming (OOP), Data Structures</li>
-                </ul>
+            <section id="skills" data-aos="fade-up">
+                <h2><i class="fas fa-code"></i> Technical Skills</h2>
+                <div class="section-content">
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Programming Languages</h3>
+                            <ul>
+                                <li>Java <div class="progress-bar"><div class="progress" style="width: 90%"></div></div></li>
+                                <li>Python <div class="progress-bar"><div class="progress" style="width: 85%"></div></div></li>
+                                <li>JavaScript (ES6) <div class="progress-bar"><div class="progress" style="width: 80%"></div></div></li>
+                                <li>HTML/CSS <div class="progress-bar"><div class="progress" style="width: 85%"></div></div></li>
+                                <li>SQL <div class="progress-bar"><div class="progress" style="width: 75%"></div></div></li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Frameworks & Libraries</h3>
+                            <ul>
+                                <li>React.js <div class="progress-bar"><div class="progress" style="width: 75%"></div></div></li>
+                                <li>Express.js <div class="progress-bar"><div class="progress" style="width: 80%"></div></div></li>
+                                <li>Bootstrap <div class="progress-bar"><div class="progress" style="width: 85%"></div></div></li>
+                                <li>jQuery <div class="progress-bar"><div class="progress" style="width: 70%"></div></div></li>
+                                <li>Redux <div class="progress-bar"><div class="progress" style="width: 65%"></div></div></li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Tools & Platforms</h3>
+                            <ul>
+                                <li>Node.js <div class="progress-bar"><div class="progress" style="width: 80%"></div></div></li>
+                                <li>Git/GitHub <div class="progress-bar"><div class="progress" style="width: 85%"></div></div></li>
+                                <li>MongoDB <div class="progress-bar"><div class="progress" style="width: 80%"></div></div></li>
+                                <li>Oracle <div class="progress-bar"><div class="progress" style="width: 75%"></div></div></li>
+                                <li>Figma/Canva <div class="progress-bar"><div class="progress" style="width: 70%"></div></div></li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Core Concepts</h3>
+                            <ul>
+                                <li>Data Structures <div class="progress-bar"><div class="progress" style="width: 85%"></div></div></li>
+                                <li>REST APIs <div class="progress-bar"><div class="progress" style="width: 80%"></div></div></li>
+                                <li>UI/UX Principles <div class="progress-bar"><div class="progress" style="width: 75%"></div></div></li>
+                                <li>Responsive Design <div class="progress-bar"><div class="progress" style="width: 85%"></div></div></li>
+                                <li>SEO Basics <div class="progress-bar"><div class="progress" style="width: 70%"></div></div></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" data-aos="fade-up">
+                <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+                <div class="section-content">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Feb 2025 - May 2025</div>
+                            <div class="timeline-content">
+                                <h3>Fullstack Web Development Intern</h3>
+                                <h4>Unified Mentor Pvt Ltd</h4>
+                                <div class="certificate-badge" data-certificate="unified-mentor">
+                                    <i class="fas fa-certificate"></i> View Certificate
+                                </div>
+                                <p>
+                                    Completed a comprehensive three-month internship focusing on full-stack web development technologies and methodologies.
+                                    Worked on real-world projects implementing both front-end and back-end solutions.
+                                    Collaborated with team members to design, develop, and deploy web applications.
+                                    Applied best practices in web development including responsive design and cross-browser compatibility.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Sep 2024 - Oct 2024</div>
+                            <div class="timeline-content">
+                                <h3>Java Intern</h3>
+                                <h4>CodeSoft</h4>
+                                <div class="certificate-badge" data-certificate="codesoft">
+                                    <i class="fas fa-certificate"></i> View Certificate
+                                </div>
+                                <p>
+                                    Developed 4+ Java-based projects, applying object-oriented programming to solve real-world problems.
+                                    Created tools and applications, including:
+                                </p>
+                                <ul class="experience-list">
+                                    <li><strong>Student Grade Calculator:</strong> Automated grade calculation for improved accuracy.</li>
+                                    <li><strong>ATM Interface:</strong> Designed a secure system with 3+ features (e.g., balance inquiry, withdrawal).</li>
+                                    <li><strong>Quiz Application:</strong> Built a timed platform supporting scoring and interactivity.</li>
+                                    <li><strong>Course Registration System:</strong> Streamlined enrollment with real-time schedule validation.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- Projects Section -->
-            <section id="projects">
-                <h2>Projects</h2>
-                <ul>
-                    <li>
-                        <strong>Novel Nest Online Bookstore Platform:</strong> 
-                        <p>
-                            Designed and developed an online bookstore platform that enables users to buy and sell new and 
-                            second-hand books. The frontend is built with HTML, CSS, and JavaScript, ensuring a responsive 
-                            and intuitive user interface. Backend functionality is managed using Node.js, Express.js, and 
-                            MongoDB, featuring secure transactions and inventory tracking.
+            <section id="projects" data-aos="fade-up">
+                <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+                <div class="section-content">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Novel Nest - Online Bookstore Platform</h3>
+                            <div class="project-links">
+                                <a href="https://novelnestt.netlify.app" target="_blank" class="btn-small"><i class="fas fa-external-link-alt"></i> Live</a>
+                                <a href="https://github.com/its-asheesh" target="_blank" class="btn-small"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                        <p class="project-tech">Node.js • Express.js • MongoDB • HTML • CSS • JavaScript • JWT</p>
+                        <p class="project-description">
+                            Developed a comprehensive online bookstore platform for buying and selling new and second-hand books, 
+                            addressing the gap in the market for bulk book transactions.
                         </p>
-                    </li>
-                </ul>
+                        <div class="project-highlights">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li><strong>Frontend:</strong> Built with HTML, CSS, and JavaScript, ensuring a responsive and user-friendly interface.</li>
+                                <li><strong>Backend:</strong> Utilized Node.js with Express.js framework to handle server-side logic and API endpoints.</li>
+                                <li><strong>Database:</strong> Managed book inventory and user data using MongoDB for scalability and efficiency.</li>
+                                <li><strong>Authentication:</strong> Implemented JWT (JSON Web Token) for secure user authentication.</li>
+                                <li><strong>Deployment:</strong> Hosted the frontend on Netlify and backend on a secure server.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Personal Portfolio Website</h3>
+                            <div class="project-links">
+                                <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Live</a>
+                                <a href="https://github.com/its-asheesh" target="_blank" class="btn-small"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                        <p class="project-tech">HTML • CSS • JavaScript • Responsive Design</p>
+                        <p class="project-description">
+                            Designed and developed a personal portfolio website to showcase my skills, projects, and professional experience.
+                            The website features a clean, modern design with responsive layout for optimal viewing on all devices.
+                        </p>
+                        <div class="project-highlights">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Responsive design that adapts to different screen sizes</li>
+                                <li>Dark/light mode toggle with persistent user preference</li>
+                                <li>Interactive elements and smooth animations</li>
+                                <li>Contact form with validation</li>
+                                <li>Project showcase with detailed descriptions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" data-aos="fade-up">
+                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                <div class="section-content">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2023 - Present</div>
+                            <div class="timeline-content">
+                                <h3>Master of Computer Applications (M.C.A.)</h3>
+                                <h4>Noida Institute of Engineering and Technology</h4>
+                                <p>
+                                    Currently pursuing Master's degree with focus on advanced computing concepts, software development,
+                                    and information systems management.
+                                </p>
+                                <p><strong>CGPA:</strong> 8.45</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications Section -->
+            <section id="certifications" data-aos="fade-up">
+                <h2><i class="fas fa-certificate"></i> Certifications</h2>
+                <div class="section-content">
+                    <div class="certifications-grid">
+                        <div class="certification-card">
+                            <div class="certification-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="certification-details">
+                                <h3>Design Thinking for Innovation</h3>
+                                <p>Coursera</p>
+                                <a href="#" class="cert-link">View Certificate</a>
+                            </div>
+                        </div>
+                        <div class="certification-card">
+                            <div class="certification-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="certification-details">
+                                <h3>Introduction to Python</h3>
+                                <p>Infosys | Springboard</p>
+                                <a href="#" class="cert-link">View Certificate</a>
+                            </div>
+                        </div>
+                        <div class="certification-card">
+                            <div class="certification-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="certification-details">
+                                <h3>Introduction to Cloud Computing</h3>
+                                <p>Infosys | Springboard</p>
+                                <a href="#" class="cert-link">View Certificate</a>
+                            </div>
+                        </div>
+                        <div class="certification-card">
+                            <div class="certification-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="certification-details">
+                                <h3>Linux Command Line for Beginners</h3>
+                                <p>Infosys | Springboard</p>
+                                <a href="#" class="cert-link">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Extra-Curricular Activities Section -->
+            <section id="activities" data-aos="fade-up">
+                <h2><i class="fas fa-users"></i> Extra-Curricular Activities</h2>
+                <div class="section-content">
+                    <div class="activity-card">
+                        <div class="activity-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h3>Technical Event Organizer</h3>
+                            <p>Volunteered in organizing technical event at NIET, demonstrating leadership and teamwork.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Form Section -->
+            <section id="contact" data-aos="fade-up">
+                <h2><i class="fas fa-envelope"></i> Get In Touch</h2>
+                <div class="section-content">
+                    <p>Feel free to reach out if you'd like to collaborate on a project, have a job opportunity, or just want to connect!</p>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
             </section>
         </div>
     </div>
+
+    <!-- Certificate Modal -->
+    <div id="certificate-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Certificate</h2>
+            <div class="certificate-container">
+                <img id="certificate-image" src="/placeholder.svg" alt="Certificate">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Asheesh Rathore. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/asheesh-rathore/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/its-asheesh" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:asheesh.rathore08@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
